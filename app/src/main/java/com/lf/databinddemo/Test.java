@@ -1,5 +1,8 @@
 package com.lf.databinddemo;
 
+import android.util.Log;
+import android.view.View;
+
 /**
  * @author 诸葛不亮
  * @version 1.0
@@ -27,4 +30,8 @@ public class Test {
 
     private String age;
 
+
+    public void testOnclick(View view){
+        Log.e("1","111");
+    }
 }

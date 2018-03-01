@@ -1,8 +1,9 @@
 package com.lf.databinddemo;
 
 import android.databinding.DataBindingUtil;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 import com.lf.databinddemo.databinding.ActivityMainBinding;
 
@@ -19,4 +20,12 @@ public class MainActivity extends AppCompatActivity {
         binding.setTest(test);
 
     }
+
+
+
+    public interface OnClickListener {
+        void onClick(View v);
+    }
+
+
 }
